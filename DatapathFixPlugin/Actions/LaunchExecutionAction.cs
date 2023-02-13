@@ -48,12 +48,12 @@ namespace DatapathFixPlugin.Actions
 
                 Thread.Sleep(1000);
 
-                string cmdArgs = $"-dataPath \"{Path.Combine(App.FileSystem.BasePath, $"ModData\\{App.SelectedPack}")}\" ";
+                string cmdArgs = $"-dataPath \"{Path.Combine(App.FileSystemManager.BasePath, $"ModData\\{App.SelectedPack}")}\" ";
                 cmdArgs += Config.Get("CommandLineArgs", "", ConfigScope.Game);
 
                 try
                 {
-                    File.WriteAllText(Path.Combine(App.FileSystem.BasePath, "tmp"), cmdArgs);
+                    File.WriteAllText(Path.Combine(App.FileSystemManager.BasePath, "tmp"), cmdArgs);
                     File.Move(Game, Game.Replace(".exe", ".orig.exe"));
                     if (File.Exists(Par))
                     {
@@ -100,7 +100,7 @@ namespace DatapathFixPlugin.Actions
         {
             try
             {
-                File.Delete(Path.Combine(App.FileSystem.BasePath, "tmp"));
+                File.Delete(Path.Combine(App.FileSystemManager.BasePath, "tmp"));
                 File.Delete(Par.Replace(".par", ".orig.par"));
 
                 // only delete game.old if it is less than 1MB to ensure it does not delete the actual game
