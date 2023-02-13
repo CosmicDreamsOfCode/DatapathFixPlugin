@@ -26,18 +26,18 @@
 
   <ItemGroup>
     <Reference Include="FrostyControls">
-      <HintPath>D:\Development\repos\Dyvinia\FrostyToolsuite\FrostyModManager\bin\Release\Final\FrostyControls.dll</HintPath>
+      <HintPath>..\..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyControls.dll</HintPath>
     </Reference>
     <Reference Include="FrostyCore">
-      <HintPath>D:\Development\repos\Dyvinia\FrostyToolsuite\FrostyModManager\bin\Release\Final\FrostyCore.dll</HintPath>
+      <HintPath>..\..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyCore.dll</HintPath>
     </Reference>
     <Reference Include="FrostySdk">
-      <HintPath>D:\Development\repos\Dyvinia\FrostyToolsuite\FrostyModManager\bin\Release\Final\FrostySdk.dll</HintPath>
+      <HintPath>..\..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostySdk.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-	<Reference Include="Newtonsoft.Json">
-	  <HintPath>D:\Development\repos\Dyvinia\FrostyToolsuite\FrostyModManager\bin\Release\Final\ThirdParty\Newtonsoft.Json.dll</HintPath>
-	</Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\ThirdParty\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System.Net.Http" />

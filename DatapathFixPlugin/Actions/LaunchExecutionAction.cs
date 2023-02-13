@@ -18,8 +18,8 @@ namespace DatapathFixPlugin.Actions
 {
     public class LaunchExecutionAction : ExecutionAction
     {
-        public string Game => Path.Combine(App.FileSystem.BasePath, $"{ProfilesLibrary.ProfileName}.exe");
-        public string Par => Path.Combine(App.FileSystem.BasePath, $"{ProfilesLibrary.ProfileName}.par");
+        public string Game => Path.Combine(App.FileSystemManager.BasePath, $"{ProfilesLibrary.ProfileName}.exe");
+        public string Par => Path.Combine(App.FileSystemManager.BasePath, $"{ProfilesLibrary.ProfileName}.par");
 
         public string DatapathFix
         {
